@@ -5,21 +5,23 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private GameObject Bank1;
-    [SerializeField] private GameObject Bank2;
-    [SerializeField] private GameObject Bank3;
-    [SerializeField] private GameObject Bank4;
-    [SerializeField] private GameObject Bank5;
-    [SerializeField] private GameObject Lantaarn1;
-    [SerializeField] private GameObject Lantaarn2;
-    [SerializeField] private GameObject Lantaarn3;
-    [SerializeField] private GameObject Lantaarn4;
-    [SerializeField] private GameObject Lantaarn5;
-    [SerializeField] private GameObject Vuilnisbak1;
-    [SerializeField] private GameObject Vuilnisbak2;
-    [SerializeField] private GameObject Vuilnisbak3;
-    [SerializeField] private GameObject Vuilnisbak4;
-    [SerializeField] private GameObject Vuilnisbak5;
+    [SerializeField] private GameObject Objecten1;
+    [SerializeField] private GameObject Objecten2;
+    [SerializeField] private GameObject Objecten3;
+    [SerializeField] private GameObject Objecten4;
+    [SerializeField] private GameObject Objecten5;
+    [SerializeField] private GameObject WeakObjecten1;
+    [SerializeField] private GameObject WeakObjecten2;
+    [SerializeField] private GameObject WeakObjecten3;
+    [SerializeField] private GameObject WeakObjecten4;
+    [SerializeField] private GameObject WeakObjecten5;
+    [SerializeField] private GameObject UltraWeakObjecten1;
+    [SerializeField] private GameObject UltraWeakObjecten2;
+    [SerializeField] private GameObject UltraWeakObjecten3;
+    [SerializeField] private GameObject UltraWeakObjecten4;
+    [SerializeField] private GameObject UltraWeakObjecten5;
+
+
     //private Vector3 scaleChange;
 
 
@@ -44,58 +46,54 @@ public class Checkpoint : MonoBehaviour
             {
 
             Debug.Log("jaa");
-            Bank1.SetActive(false);
+           
 
         }
 
         if (loopCount == 3)
-        {        
-            Bank2.SetActive(false);
-            Bank5.SetActive(false);
-            Bank3.SetActive(false);
-            Bank4.SetActive(false);
+        {
+            WeakObjecten1.SetActive(true);
+            WeakObjecten2.SetActive(true);
+            WeakObjecten3.SetActive(true);
+            WeakObjecten4.SetActive(true);
+            WeakObjecten5.SetActive(true);
+            Objecten1.SetActive(false);
+            Objecten2.SetActive(false);
+            Objecten3.SetActive(false);
+            Objecten4.SetActive(false);
+            Objecten5.SetActive(false);
+
         }
         if (loopCount == 4)
         {
-            Lantaarn1.SetActive(false);
-            Lantaarn2.SetActive(false);
-            Lantaarn3.SetActive(false);
-            Lantaarn4.SetActive(false);
-            Lantaarn5.SetActive(false);
-            Vuilnisbak1.SetActive(false);
-            Vuilnisbak2.SetActive(false);
-            Vuilnisbak3.SetActive(false);
-            Vuilnisbak4.SetActive(false);
-            Vuilnisbak5.SetActive(false);
+           
         }
         if (loopCount == 5)
         {
-            Bank1.SetActive(true);
-            Bank2.SetActive(true);
-            Bank5.SetActive(true);
-            Bank3.SetActive(true);
-            Bank4.SetActive(true);
-            Lantaarn1.SetActive(true);
-            Lantaarn2.SetActive(true);
-            Lantaarn3.SetActive(true);
-            Lantaarn4.SetActive(true);
-            Lantaarn5.SetActive(true);
-            Vuilnisbak1.SetActive(true);
-            Vuilnisbak2.SetActive(true);
-            Vuilnisbak3.SetActive(true);
-            Vuilnisbak4.SetActive(true);
-            Vuilnisbak5.SetActive(true);
-            Bank1.transform.localScale = new Vector3(10f, 10f, 10f);
-            Bank2.transform.localScale = new Vector3(10f, 10f, 10f);
-            Bank3.transform.localScale = new Vector3(10f, 10f, 10f);
-            Bank4.transform.localScale = new Vector3(10f, 10f, 10f);
-            Bank5.transform.localScale = new Vector3(10f, 10f, 10f);
-            Lantaarn1.transform.localScale = new Vector3(10f, 10f, 10f);
-            Lantaarn2.transform.localScale = new Vector3(10f, 10f, 10f);
-            Lantaarn3.transform.localScale = new Vector3(10f, 10f, 10f);
-            Lantaarn4.transform.localScale = new Vector3(10f, 10f, 10f);
-            Lantaarn5.transform.localScale = new Vector3(10f, 10f, 10f);
+            WeakObjecten1.SetActive(false);
+            WeakObjecten2.SetActive(false);
+            WeakObjecten3.SetActive(false);
+            WeakObjecten4.SetActive(false);
+            WeakObjecten5.SetActive(false);
+            UltraWeakObjecten1.SetActive(true);
+            UltraWeakObjecten2.SetActive(true);
+            UltraWeakObjecten3.SetActive(true);
+            UltraWeakObjecten4.SetActive(true);
+            UltraWeakObjecten5.SetActive(true);
 
+        }
+        if (loopCount == 7)
+        {
+            Objecten2.SetActive(true);
+            Objecten1.SetActive(true);
+            Objecten3.SetActive(true);
+            Objecten4.SetActive(true);
+            Objecten5.SetActive(true);
+            UltraWeakObjecten2.SetActive(false);
+            UltraWeakObjecten3.SetActive(false);
+            UltraWeakObjecten4.SetActive(false);
+            UltraWeakObjecten5.SetActive(false);
+            UltraWeakObjecten1.SetActive(false);
         }
     }
 }
