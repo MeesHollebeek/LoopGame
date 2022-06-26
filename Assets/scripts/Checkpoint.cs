@@ -75,7 +75,15 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] private GameObject PoliceLight7;
     [SerializeField] private GameObject PoliceLight8;
     [SerializeField] private GameObject Car;
-    [SerializeField] private GameObject bloed;
+    [SerializeField] private GameObject bloed1;
+    [SerializeField] private GameObject bloed2;
+    [SerializeField] private GameObject bloed3;
+    [SerializeField] private GameObject scenecamera;
+    [SerializeField] private GameObject endscreen;
+    [SerializeField] private GameObject body;
+    [SerializeField] private GameObject einde;
+    [SerializeField] private GameObject carCrash;
+
 
 
 
@@ -253,6 +261,16 @@ public class Checkpoint : MonoBehaviour
             lamp5.SetActive(true);
             lamp6.SetActive(true);
             lamp7.SetActive(true);
+            Car.SetActive(true);
+            bloed1.SetActive(true);
+            bloed2.SetActive(true);
+            bloed3.SetActive(true);
+            scenecamera.SetActive(true);
+            body.SetActive(true);
+            endscreen.SetActive(true);
+            einde.SetActive(false);
+            amublance.SetActive(true);
+            carCrash.SetActive(true);
         }
     }
 }
