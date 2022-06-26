@@ -61,6 +61,24 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] private GameObject lamp7;
     [SerializeField] private GameObject lamp8;
 
+    [SerializeField] private GameObject FinalBLow;
+
+    [SerializeField] private GameObject Police;
+    [SerializeField] private GameObject amublance;
+
+    [SerializeField] private GameObject PoliceLight1;
+    [SerializeField] private GameObject PoliceLight2;
+    [SerializeField] private GameObject PoliceLight3;
+    [SerializeField] private GameObject PoliceLight4;
+    [SerializeField] private GameObject PoliceLight5;
+    [SerializeField] private GameObject PoliceLight6;
+    [SerializeField] private GameObject PoliceLight7;
+    [SerializeField] private GameObject PoliceLight8;
+    [SerializeField] private GameObject Car;
+    [SerializeField] private GameObject bloed;
+
+
+
     //private Vector3 scaleChange;
 
 
@@ -195,6 +213,46 @@ public class Checkpoint : MonoBehaviour
             kapot8.SetActive(true);
             kapot9.SetActive(true);
             kapot10.SetActive(true);
+        }
+        if (loopCount == 9)
+        {
+            FinalBLow.SetActive(true);
+            Objecten1.SetActive(false);
+            Objecten2.SetActive(false);
+            Objecten3.SetActive(false);
+            Objecten4.SetActive(false);
+            Objecten5.SetActive(false);
+            Objecten6.SetActive(false);
+            Objecten7.SetActive(false);
+            Objecten8.SetActive(false);
+            Police.SetActive(true);
+            PoliceLight1.SetActive(true);
+            PoliceLight2.SetActive(true);
+            PoliceLight3.SetActive(true);
+            PoliceLight4.SetActive(true);
+            PoliceLight5.SetActive(true);
+            PoliceLight6.SetActive(true);
+            PoliceLight7.SetActive(true);
+            PoliceLight8.SetActive(true);
+
+        }
+        if (loopCount == 10)
+        {
+            Objecten2.SetActive(true);
+            Objecten1.SetActive(true);
+            Objecten3.SetActive(true);
+            Objecten4.SetActive(true);
+            Objecten5.SetActive(true);
+            Objecten6.SetActive(true);
+            Objecten7.SetActive(true);
+            Objecten8.SetActive(true);
+            lamp1.SetActive(true);
+            lamp2.SetActive(true);
+            lamp3.SetActive(true);
+            lamp4.SetActive(true);
+            lamp5.SetActive(true);
+            lamp6.SetActive(true);
+            lamp7.SetActive(true);
         }
     }
 }

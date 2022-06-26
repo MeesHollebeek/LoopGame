@@ -20,10 +20,6 @@ public class FootStepScript : MonoBehaviour
             footsteps();
         }
 
-        if (Input.GetKeyDown("s"))
-        {
-            footsteps();
-        }
 
         if (Input.GetKeyDown("a"))
         {
@@ -36,11 +32,6 @@ public class FootStepScript : MonoBehaviour
         }
 
         if (Input.GetKeyUp("w"))
-        {
-            StopFootsteps();
-        }
-
-        if (Input.GetKeyUp("s"))
         {
             StopFootsteps();
         }

@@ -19,7 +19,7 @@ public class glitchOnRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(playerBody.transform.rotation.y > 0.67 || playerBody.transform.rotation.y < -0.67)
+        if (playerBody.transform.rotation.y > 0.67 || playerBody.transform.rotation.y < -0.67)
         {
             script.intensity = 1;
             isPaused = true;
@@ -51,6 +51,6 @@ public class glitchOnRotate : MonoBehaviour
         {
             script.colorIntensity = 0;
         }
-
+      
     }
 }
