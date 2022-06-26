@@ -242,6 +242,14 @@ public class Checkpoint : MonoBehaviour
             PoliceLight6.SetActive(true);
             PoliceLight7.SetActive(true);
             PoliceLight8.SetActive(true);
+            lamp1.SetActive(true);
+            lamp2.SetActive(true);
+            lamp3.SetActive(true);
+            lamp4.SetActive(true);
+            lamp5.SetActive(true);
+            lamp6.SetActive(true);
+            lamp7.SetActive(true);
+            lamp8.SetActive(true);
 
         }
         if (loopCount == 10)
